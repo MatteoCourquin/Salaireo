@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&family=Nunito:wght@300&display=swap');
+
+:root{
+    --color-dark-main: #6A8D73;
+    --color-medium-main: #1b28e318;
+    --color-light-main: #F4FDD9;
+    --color-white: #fff;
+}
+
+body{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-light-main);
+    font-family: 'Nunito', sans-serif;
+}
+
+h1{
+    width: 90vw;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: calc(20px + 3vw);
+    color: var(--color-dark-main);
+}
+
+div{
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-dark-main);
+}
+
+label{
+    margin: 10px 0;
+    color: var(--color-dark-main);
+    font-size: 20px;
+    text-align: center;
+}
+
+.champs{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--color-medium-main);
+    color: var(--color-dark-main);
+    /* Glassmorphisme */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid var(--color-medium-main);
+}
+.champs::placeholder{
+    color: var(--color-dark-main);
+    font-family: 'Nunito', sans-serif;
+}
+.champs{
+    background-image: url(assets/images/euro.png);
+    background-size: 20px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.radio-charges-auto {
+    margin: 10px;
+}
+.radio-charges-auto label{
+    font-size: 16px;
+}
+
+.btn-champs{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0;
+    outline: none;
+    cursor: pointer;
+    transition: .1s;
+    background: var(--color-dark-main);
+    color: var(--color-light-main);
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid var(--color-medium-main);
+}
+.btn-champs:hover{
+    box-shadow: none;
+    background: var(--color-medium-main);
+    color: var(--color-dark-main);
+}
+
+
+.section-charges-auto{
+    margin-top: 30px;
+}

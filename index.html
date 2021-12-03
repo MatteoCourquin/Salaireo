@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Salaireo définis ton Budget !</title>
+</head>
+<body>
+    <h1>Calculateur de Charges</h1>
+
+    <label for="salaire">Salaire :</label>
+    <input id="salaire" class="champs" placeholder="00 000" inputmode="numeric" type="text" value="2400"/>
+
+    <label class="section-charges-auto" for="input-charges-auto">Niveau de Charges :</label>
+    <div>
+        <input type="radio" id="charges5" name="input-charges-auto" value="5.5" checked>
+        <label for="charges5">5,5 %</label>
+        
+        <input type="radio" id="charges11" name="input-charges-auto" value="11">
+        <label for="charges11">11 %</label>
+        
+        <input type="radio" id="charges16" name="input-charges-auto" value="16.5">
+        <label for="charges16">16,5 %</label>
+        
+        <input type="radio" id="charges20" name="input-charges-auto" value="20">
+        <label for="charges20">20 %</label>
+    </div>
+
+    <button id="calculate" class="btn-champs">Calculez</button>
+    <div id="total-charges"></div>
+    <div id="total-charges-auto"></div>
+    <div id="total-argent-poche"></div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
